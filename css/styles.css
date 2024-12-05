@@ -1,0 +1,68 @@
+/* Global Reset */
+* {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      box-sizing: border-box;
+  }
+  :root {
+      --primary-color: #5A67D8;       /* Soft indigo for a professional yet modern look */
+      --primary-color-100: #EBF4FF;   /* Very light blue for highlights */
+      --primary-color-300: #7F9CF5;   /* A muted yet vibrant secondary accent for primary */
+      
+      --secondary-color: #2D3748;     /* Neutral dark grey for structure and contrast */
+      --secondary-color-600: #4FD1C5; /* Aqua-teal for interactive elements */
+      --secondary-color-900: #1A202C; /* Deep charcoal for depth */
+      
+      --background-color: #F7FAFC;    /* Light off-white for a clean, minimal background */
+      --surface-color: #EDF2F7;       /* Soft grey-white for cards or modals */
+      --neutral-color: #A0AEC0;       /* Cool grey for text and neutral elements */
+      
+      --title-font: "Roboto Flex", "Helvetica", Arial, sans-serif;
+      --body-font: "Domine", "Times New Roman", serif;
+  }
+  html {
+      background-color: var(--background-color);
+      font-family: var(--body-font);
+      color: var(--secondary-color);
+      font-size: 30px;
+  }
+  
+  body {
+      margin: 0;
+  }
+  .center-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .center-column {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+  h1{
+    color: var(--secondary-color);
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  h2{
+    font-family: var(--body-font);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    letter-spacing: 0.06rem;
+  }
+  p{
+    color: var(--neutral-color);
+    font-size: 1.2rem;
+  }
+  .text-label{
+    background-color: var(--secondary-color-600);
+    color: var(--background-color);
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+  }
